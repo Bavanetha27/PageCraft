@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Login & Registration Form</title>
+
+  <link rel="stylesheet" href="/css/reg.css">
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="/auth/login" method="post">
+        <input type="email" placeholder="Enter your official email" name="email">
+        <input type="password" placeholder="Enter your password" name="password">
+        <a href="#">Forgot password?</a>
+        <input type="submit" class="button" id ="login">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <a href="/auth/signup">Signup</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('login').addEventListener('click' ,()=>{
+      window.location.href = "/auth/home";
+    });
+  </script>
+</body>
+</html>

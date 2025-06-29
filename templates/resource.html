@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <script src="https://kit.fontawesome.com/877fdb1861.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/resource.css">
+    <link rel="stylesheet" href="/css/land.css">
+</head>
+<body>
+    <section id="header">
+        <a herf="#"><img src="/css/img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  class="active" href="/auth/home">Home</a></li>
+                <li><a  href="/auth/about">About</a></li>
+                <li><a href="/auth/resource">Resources</a></li>
+                <li><a href="/auth/contact">Contact</a></li>
+                <li><a href="/auth/profile"><i class="fa-solid fa-user"></i></a></li>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <div  class="back">
+        <a href="/auth/resource"> <- Back </a>
+    </div>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for books...">
+        <button type="submit" onclick="searchBooks()">Search</button>
+    </div>
+    <div class="book-container">
+        <div class="book-row">
+            <a href="/auth/book2"  class="book-item"  data-category="Programming Languages"><div >
+                <img src="/css/img/pl1.jpg" alt="Book 1">
+                <p class="book-title">The Rust Programming Language</p>
+                <p class="book-author">Steve Klabnik & Carol Nicolas</p>
+            </div></a>
+            <a href="/auth/book3"  class="book-item"  data-category="Programming Languages"><div >
+                <img src="/css/img/pl2.jpg" alt="Book 2">
+                <p class="book-title">C Programming</p>
+                <p class="book-author">Dr.R.K.Bansal</p>
+            </div></a>
+            <a href="/auth/book4" class="book-item" data-category="Programming Languages"><div >
+                <img src="/css/img/pl3.jpg" alt="Book 3">
+                <p class="book-title">Programming Language</p>
+                <p class="book-author">Robert W. Sebesta</p>
+            </div></a>
+            <a href="/auth/book1" class="book-item"  data-category="Mathematics"><div >
+                <img src="/css/img/mat1.jpg" alt="Book 4">
+                <p class="book-title">Easiest way to achieve Algebra</p>
+                <p class="book-author">Roy Richard Sayer</p>
+            </div></a>
+            <a href="/auth/book5" class="book-item" data-category="Mathematics" ><div >
+                <img src="/css/img/mat2.jpg" alt="Book 5">
+                <p class="book-title">Calculating Advanced Statistics</p>
+                <p class="book-author">Ana Rojas-LeBouef & John R.Slate</p>
+            </div></a>
+            <!-- Add more book items here with appropriate data-category -->
+            <a href="/auth/book6" class="book-item"  data-category="Mathematics"><div >
+                <img src="/css/img/mat3.png" alt="Book 5">
+                <p class="book-title">Mathematics Cirriculum</p>
+                <p class="book-author">Yoshinori Shimizu</p>
+            </div></a>
+            <a href="/auth/book7" class="book-item" data-category="Physics"><div >
+                <img src="/css/img/phy1.jpg" alt="Book 5">
+                <p class="book-title">Engineering Physics</p>
+                <p class="book-author">P.S Aithal & H.J.Ravindra</p>
+            </div></a>
+            <a href="/auth/book8" class="book-item"  data-category="Physics"><div>
+                <img src="/css/img/phy2.jpg" alt="Book 5">
+                <p class="book-title">Modern Physics</p>
+                <p class="book-author">Stephen T.Thornton</p>
+            </div></a>
+            <a href="/auth/book9" class="book-item" data-category="Physics"><div >
+                <img src="/css/img/phy3.jpg" alt="Book 5">
+                <p class="book-title">Engineering Physics</p>
+                <p class="book-author">Y.D Kale</p>
+            </div></a>
+            <a href="/auth/book10" class="book-item" data-category="ece"><div>
+                <img src="/css/img/ece1.jpg" alt="Book 5">
+                <p class="book-title">Electronic Engineering</p>
+                <p class="book-author">IIT Kanpur</p>
+            </div></a>
+            <a href="/auth/book11" class="book-item" data-category="ece"><div>
+                <img src="/css/img/ece2.jpg" alt="Book 5">
+                <p class="book-title">Semiconductor Physics And Devices</p>
+                <p class="book-author">Donald A Neamen & Dhrubes Biswas</p>
+            </div></a>
+            <a href="/auth/book12" class="book-item" data-category="ece"><div>
+                <img src="/css/img/ece3.jpg" alt="Book 5">
+                <p class="book-title">Electronic Devices And Circuit Theory</p>
+                <p class="book-author">Robert L Boylestad & Louis Nashelsky</p>
+            </div></a>
+            <a href="/auth/book13" class="book-item" data-category="eee"><div >
+                <img src="/css/img/eee1.jpg" alt="Book 5">
+                <p class="book-title">Electrical Circuits</p>
+                <p class="book-author">Dr.R Thyagarajan & Ms.K Lavanya</p>
+            </div></a>
+            <a href="/auth/book14" class="book-item" data-category="eee"><div >
+                <img src="/css/img/eee2.jpg" alt="Book 5">
+                <p class="book-title">Electrical Engineering</p>
+                <p class="book-author">Prashant S.Minz</p>
+            </div></a>
+            <a href="/auth/book15" class="book-item" data-category="eee"><div >
+                <img src="/css/img/eee3.jpg" alt="Book 5">
+                <p class="book-title">Fundamentals of Electrical Engineering</p>
+                <p class="book-author">Don Jonhson</p>
+            </div></a>
+            <a href="/auth/book16" class="book-item" data-category="ai"><div >
+                <img src="/css/img/ai1.jpg" alt="Book 5">
+                <p class="book-title">Exploration in AI and ML</p>
+                <p class="book-author">Taylor & Francis </p>
+            </div></a>
+            <a href="/auth/book17" class="book-item"  data-category="ai"><div>
+                <img src="/css/img/ai2.jpg" alt="Book 5">
+                <p class="book-title">Artificial Intelligence and Technology</p>
+                <p class="book-author">Huawei Technologies Co.</p>
+            </div></a>
+            <a href="/auth/book18" class="book-item" data-category="ai"><div >
+                <img src="/css/img/ai3.jpg" alt="Book 5">
+                <p class="book-title">Artificial Intelligence</p>
+                <p class="book-author">Michael Negnevitsky</p>
+            </div></a>
+            <a href="/auth/book19" class="book-item"  data-category="ml"><div>
+                <img src="/css/img/ml1.jpg" alt="Book 5">
+                <p class="book-title">Machine learning</p>
+                <p class="book-author">Saikat Dutt, Subramanian Chandramouli & Amit Kumar Das</p>
+            </div></a>
+            <a href="/auth/book20" class="book-item"  data-category="ml"><div>
+                <img src="/css/img/ml2.jpg" alt="Book 5">
+                <p class="book-title">Mathematics For Machine Learning</p>
+                <p class="book-author">Marc Peter Deisenroth , A.Aldo Faisal & Cheng Soon Ong</p>
+            </div></a>
+            <a href="/auth/book21" class="book-item" data-category="ml"><div >
+                <img src="/css/img/ml3.jpg" alt="Book 5">
+                <p class="book-title">Machine Learning Yearning</p>
+                <p class="book-author">Andrew NG</p>
+            </div></a>
+            <a href="/auth/book22" class="book-item" data-category="Chemistry"><div >
+                <img src="/css/img/che1.jpg" alt="Book 5">
+                <p class="book-title">Engineering Chemistry</p>
+                <p class="book-author">Dr.H.S.Dutt & Mr. K.S . Damie</p>
+            </div></a>
+            <a href="/auth/book23" class="book-item" data-category="Chemistry"><div >
+                <img src="/css/img/che2.jpg" alt="Book 5">
+                <p class="book-title">Funtamentals And Applications of Engineering Chemistry</p>
+                <p class="book-author">shikha Agarwal</p>
+            </div></a>
+            <a href="/auth/book24" class="book-item"  data-category="Chemistry"><div>
+                <img src="/css/img/che3.jpg" alt="Book 5">
+                <p class="book-title">Engineering Chemistry</p>
+                <p class="book-author"> R Mukhopadhyay</p>
+            </div></a>
+        </div>
+    </div>
+   
+    <section id="footer">
+        <footer class="section-p1">
+            <img src="/css/img/logo.png" class="logo" alt="">
+            <div class="col">
+                <div>
+                    <h4>ContactUs</h4>
+                    <br>
+                    <p><span><strong>Phone : </strong> </span>+91 9999933245</p>
+                    <p><span><strong>Email : </strong></span> PageCraft@gmail.com</p>
+                    <div class="follow">
+                        <h4>Follow us</h4>
+                        <div class="icon">
+                            <a href="#" ><i class="fa fa-facebook"></i></a>
+                            <a href="#" ><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class=" fa fa-twitter"></i></a>
+                            <a href="#" ><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <h4>Sign Up For Updates</h4>
+                    <p>Get E-mail updates about our website</p>
+                    <input type="text" placeholder="Your email address">
+                    <button class="newsletter">Sign Up</button>
+                </div>
+        
+            </div>
+           
+            <div class="copyright">
+                <p>&copy Copyright PageCraft</p>
+            </div>
+        </footer>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var selectedCategory = localStorage.getItem('selectedCategory');
+            if (selectedCategory) {
+                sortBooks(selectedCategory);
+                localStorage.removeItem('selectedCategory');
+            }
+        });
+
+        function sortBooks(category) {
+            var bookContainer = document.querySelector('.book-container');
+            var bookItems = Array.from(bookContainer.querySelectorAll('.book-item'));
+
+            var matchingBooks = [];
+            var nonMatchingBooks = [];
+
+            bookItems.forEach(function(bookItem) {
+                if (bookItem.getAttribute('data-category') === category) {
+                    matchingBooks.push(bookItem);
+                } else {
+                    nonMatchingBooks.push(bookItem);
+                }
+            });
+
+            // Clear the book container
+            bookContainer.innerHTML = '';
+
+            // Helper function to create and append rows
+            function appendBooksToContainer(books) {
+                var newBookRow = document.createElement('div');
+                newBookRow.classList.add('book-row');
+                books.forEach(function(bookItem, index) {
+                    newBookRow.appendChild(bookItem);
+                    if ((index + 1) % 3 === 0) {
+                        bookContainer.appendChild(newBookRow);
+                        newBookRow = document.createElement('div');
+                        newBookRow.classList.add('book-row');
+                    }
+                });
+                if (newBookRow.children.length > 0) {
+                    bookContainer.appendChild(newBookRow);
+                }
+            }
+
+            // Append matching books first
+            appendBooksToContainer(matchingBooks);
+
+            // Append non-matching books next
+            appendBooksToContainer(nonMatchingBooks);
+        }
+
+        function searchBooks() {
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            var bookContainer = document.querySelector('.book-container');
+            var bookItems = Array.from(bookContainer.querySelectorAll('.book-item'));
+            var matchingBooks = [];
+            var nonMatchingBooks = [];
+
+            bookItems.forEach(function(bookItem) {
+                var title = bookItem.querySelector('.book-title').textContent.toLowerCase();
+                if (title.includes(input)) {
+                    matchingBooks.push(bookItem);
+                } else {
+                    nonMatchingBooks.push(bookItem);
+                }
+            });
+
+            // Clear the book container
+            bookContainer.innerHTML = '';
+
+            // Helper function to create and append rows
+            function appendBooksToContainer(books) {
+                var newBookRow = document.createElement('div');
+                newBookRow.classList.add('book-row');
+                books.forEach(function(bookItem, index) {
+                    newBookRow.appendChild(bookItem);
+                    if ((index + 1) % 3 === 0) {
+                        bookContainer.appendChild(newBookRow);
+                        newBookRow = document.createElement('div');
+                        newBookRow.classList.add('book-row');
+                    }
+                });
+                if (newBookRow.children.length > 0) {
+                    bookContainer.appendChild(newBookRow);
+                }
+            }
+
+            // Append matching books first
+            appendBooksToContainer(matchingBooks);
+
+            // Append non-matching books next
+            appendBooksToContainer(nonMatchingBooks);
+        }
+    </script>
+</body>
+
+</html>

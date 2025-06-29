@@ -1,0 +1,91 @@
+body{
+    overflow-x: hidden;
+}
+
+body a{
+    text-decoration: none;
+}
+.margin-left{
+    margin-left: 50px;
+}
+
+footer {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #185720;
+    margin-top: 10px;
+}
+.col{
+    margin-top:0px;
+    padding:0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.newsletter{
+    background-color: #d8fdde;
+    color: #185720;
+}
+
+.newsletter:hover{
+    color:rgb(12, 8, 248);
+}
+footer .logo{
+    width:150px;
+    height:8vh
+}
+
+footer .icon i{
+    font-size: 25px;
+    color:#b1d4b6;
+    margin-right: 10px;
+}
+footer .icon i:hover{
+    color:bisque
+}
+footer h4{
+    font-size: 21px;
+    padding-bottom: 10px;
+    color: rgb(216, 248, 216);
+}
+footer p{
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    color:rgb(218, 218, 241)
+}
+
+footer p span{
+    color:azure
+}
+.follow h4{
+    margin: 20px 0px;
+}
+.form{
+    width:50%;
+    margin-right: -70px;
+    text-align:center;
+    line-height: 30px;
+}
+.form input{
+    height:7vh;
+    width:60%;
+    padding:10px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.form button{
+    font-size: larger;
+    border-radius: 20px;
+    padding:10px;
+}
+.copyright{
+    width:100%;
+    text-align: center;
+    color: rgb(241, 235, 235);
+}
+
+.copyright p{
+    margin:-20px;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account</title>
+    <script src="https://kit.fontawesome.com/877fdb1861.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+       
+            <a herf="#"><img src="/css/img/logo.png" class="logo" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><a  class="active" href="/auth/home">Home</a></li>
+                    <li><a  href="/auth/about">About</a></li>
+                    <li><a href="/auth/resource">Resources</a></li>
+                    <li><a href="/auth/contact">Contact</a></li>
+                    <li><a href="/auth/profile"><i class="fa-solid fa-user"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <ul id="sidebar-nav">
+            <li><a href="#profile-overview" class="sidebar-link">Profile Overview</a></li>
+            <li><a href="#viewed" class="sidebar-link">Recently Viewed</a></li>
+            <li><a href="#credits" class="sidebar-link">Credits</a></li>
+            <li><a href="#messages" class="sidebar-link">Messages</a></li>
+            <li><a href="#settings" class="sidebar-link">Settings</a></li>
+            <li><a href="#help" class="sidebar-link">Help</a></li>
+            <li><a href="/auth/" class="sidebar-link">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Profile Overview -->
+        <section id="profile-overview">
+            <h1>Profile Overview</h1>
+            <div class="profile-picture">
+                <!--<img src="profile-pic.jpg" alt="Profile Picture">-->
+                <i class="fa-solid fa-user"></i>
+                <button class="pbutton">Change Picture</button>
+            </div>
+            <div class="basic-info">
+                <p>Name: jones</p>
+                <p>Email: jane.doe@example.com</p>
+                <p>Mobile: 3856345874</p>
+                <p>Bio: Expert in mathematics.</p>
+                <button class="pbutton">Edit Profile</button>
+            </div>
+        </section>
+
+        <!-- recently viewed -->
+        <section id="viewed">
+            <h1>Resently viewed</h1>
+            <div class="view-gallery">
+                <!-- Example books  -->
+                <div class="view-item">
+                    <div class="view-actions">
+                        <img src="/css/img/book1.jpg">
+                        <img src="/css/img/\book4.jpg">
+                        <img src = "/css/img/book6.jpg">
+                    </div>
+                    <a href="/auth/resource1"><button class="pbutton">View All</button></a>
+                </div>
+                <!-- More artwork items -->
+            </div>
+        </section>
+
+        
+
+        <!-- credits -->
+        <section id="credits">
+            <h1>Credits</h1>
+            <div class="sales-summary">
+                <p>Total Hours used: 120 hrs</p>
+                <p>Total Books Viewed: 10</p>
+                <p>Credits: 200 pts</p>
+            </div>
+            <button class="pbutton">Claim Price</button>
+            <button class="pbutton">Claim Coupon</button>
+        </section>
+
+        <!-- Messages -->
+        <section id="messages">
+            <h1>Messages</h1>
+            <div class="message-inbox">
+                
+                <div class="message-item">
+                    <p>From: buyer@example.com</p>
+                    <p>Subject: Inquiry about artwork</p>
+                    <button class="pbutton">Read</button>
+                </div>
+                <div class="message-item">
+                    <p>From: buyer@example.com</p>
+                    <p>Subject: Inquiry about artwork</p>
+                    <button class="pbutton">Read</button>
+                </div>
+               
+            </div>
+            <button class="pbutton">Compose Message</button>
+        </section>
+
+        <!-- Settings -->
+        <section id="settings">
+            <h1>Settings</h1>
+            <div class="account-settings">
+                <h2>Account Settings</h2>
+                <p>Email: <input type="email" value="jane.doe@example.com"></p>
+                <p>Password: <input type="password" value=""></p>
+                <button class="pbutton">Save Changes</button>
+            </div>
+            <div class="notification-settings">
+                <h2>Notification Settings</h2>
+                <p><input type="checkbox" checked> Email Notifications</p>
+                <p><input type="checkbox"> SMS Notifications</p>
+                <button class="pbutton">Save Changes</button>
+            </div>
+           
+        </section>
+        <!-- Helps -->
+        <section id="help">
+            <h1>Help</h1>
+            <div class="help">
+                <!-- Example order item -->
+                <div class="help-form">
+                    <p>Send a report</p>
+                    <textarea type="text" row="5" cols="20"></textarea> 
+                    
+                </div>
+              
+            </div>
+            <button class="pbutton">Send</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <section id="footer">
+        <footer class="section-p1">
+            <img src="/css/img/logo.png" class="logo" alt="">
+            <div class="col">
+                <div>
+                    <h4>ContactUs</h4>
+                    <br>
+                    <p><span><strong>Phone : </strong> </span>+91 9999933245</p>
+                    <p><span><strong>Email : </strong></span> PageCraft@gmail.com</p>
+                    <div class="follow">
+                        <h4>Follow us</h4>
+                        <div class="icon">
+                            <a href="#" ><i class="fa fa-facebook"></i></a>
+                            <a href="#" ><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class=" fa fa-twitter"></i></a>
+                            <a href="#" ><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form pform">
+                    <h4>Sign Up For Updates</h4>
+                    <p>Get E-mail updates about our website</p>
+                    <input type="text" placeholder="Your email address">
+                    <button class="newsletter" class="pbutton">Sign Up</button>
+                </div>
+        
+            </div>
+           
+            <div class="copyright">
+                <p>&copy Copyright PageCraft</p>
+            </div>
+        </footer>
+    </section>
+    <script>
+
+
+
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            const currentHash = window.location.hash;
+            if (currentHash) {
+                sidebarLinks.forEach(link => {
+                    if (link.getAttribute('href') === currentHash) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    sidebarLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        
+
+          
+    </script>
+</body>
+</html>

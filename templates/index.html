@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/land.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="/css/img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar" class = "navbar">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><button class = "login" id="login">Sign In</button></li>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <section id="hero" class="hero">
+        <h1>Page Craft</h1>
+        <h2>Pioneering QualityAssessment</h2>
+        <h2> for Educational Resources</h2>
+        <br>
+        <br>
+        <br>
+        <button>Explore!</button>
+    </section>
+    <section id="about">
+    <section id="page-header" class="about-header">
+        <h2># Know More</h2>
+        <div class="mar">
+        <marquee loop="-1" scrollamount="5" width="100%" >
+            <h3>Discover Your Next Great Read: Unbiased Reviews, Curated Recommendations</h3>
+        </marquee>
+    </div>
+    </section>
+    <section id="about-head" class="section-p1">
+        <img src="/css/img/img.jpg" alt="">
+        <div class ="aboutus">
+            <h2>Who We Are?</h2>
+            <p>At Page Craft, we are dedicated book enthusiasts focused on connecting you with the best educational reads.
+                 Our platform offers unbiased reviews and personalized recommendations to ensure every book enhances your 
+                 knowledge and learning experience. We believe in the transformative power of education through literature. 
+                 Join our community of lifelong learners and explore a world of books tailored just for you. Discover,
+                  read, and excel with Page Craft.</p>
+        </div>
+    </section>
+</section>
+<section id="features">
+    <div class="fe"><h2>Features</h2></div>
+    <div class="skill">
+    <div class="sk">
+        <h3>Expert Review</h3>
+        <h4>Provides the book suggestion based on expert Review</h4>
+    </div>
+    <div class="sk">
+        <h3>AI-Analysis</h3>
+        <h4>AI-driven content analysis to check the quality of content of the book</h4>
+    </div>
+    <div class="sk">
+        <h3>Multilingual Support</h3>
+        <h4>This platform provides you the multilingual support for your easy learning</h4>
+    </div>
+    <div class="sk">
+        <h3>Credit System</h3>
+        <h4>Earn your CREDITS According to your access-streak and reviews</h4>
+    </div>
+</div>
+</section>
+<section id="footer">
+    <footer class="section-p1">
+        <img src="/css/img/logo.png" class="logo" alt="">
+        <div class="col">
+            <div>
+                <h4>ContactUs</h4>
+                <br>
+                <p><span><strong>Phone : </strong> </span>+91 9999933245</p>
+                <p><span><strong>Email : </strong></span> PageCraft@gmail.com</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <a href="#" ><i class="fa fa-facebook"></i></a>
+                        <a href="#" ><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class=" fa fa-twitter"></i></a>
+                        <a href="#" ><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h4>Sign Up For Updates</h4>
+                <p>Get E-mail updates about our website</p>
+                <input type="text" placeholder="Your email address">
+                <button class="newsletter">Sign Up</button>
+            </div>
+    
+        </div>
+       
+        <div class="copyright">
+            <p>&copy Copyright PageCraft</p>
+        </div>
+    </footer>
+</section>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+<script>
+    const sr = ScrollReveal({
+    distance : '40px',
+    duration : 2500,
+    reset : true
+});
+
+
+
+sr.reveal('.hero h1',{delay : 600 , origin :'top'});
+sr.reveal('.hero h2',{delay : 650 , origin :'left'});
+sr.reveal('.hero button',{delay : 700 , origin :'bottom'});
+sr.reveal('.aboutus h2',{delay : 600 , origin :'top'});
+sr.reveal('.aboutus p',{delay : 600 , origin :'right'});
+sr.reveal('.fe h2',{delay : 100 , origin :'top'});
+
+document.getElementById('login').addEventListener('click' ,()=>{
+      window.location.href = "/auth/login";
+    });
+
+  </script>
+</body>
+</html>
+
+
+
+
